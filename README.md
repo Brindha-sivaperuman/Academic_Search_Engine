@@ -1,101 +1,155 @@
-# Academic Search Engine
+# 🔎 Academic Search Engine
 
-## 📌 Project Overview
+A Flask-based Academic Search Engine that retrieves and ranks relevant Wikipedia documents using **TF-IDF (Term Frequency–Inverse Document Frequency)** and **Cosine Similarity**.
 
-The Academic Search Engine is a Flask-based web application that retrieves relevant Wikipedia documents based on a user query and ranks them using:
+---
 
-- TF-IDF (Term Frequency - Inverse Document Frequency)
-- Cosine Similarity
-- Vector Space Model
+## 📌 Project Description
 
-This project demonstrates fundamental Information Retrieval concepts.
+This project implements an Information Retrieval (IR) system that allows users to enter a search query and receive ranked academic content from Wikipedia.
+
+The system:
+
+- Fetches related Wikipedia documents
+- Converts text into TF-IDF vectors
+- Computes cosine similarity between query and documents
+- Ranks documents based on similarity score
+- Displays top 5 most relevant results
+
+This project demonstrates practical implementation of core Information Retrieval concepts.
 
 ---
 
 ## 🚀 Features
 
-- Search academic topics dynamically
-- Retrieve Wikipedia summaries
-- Calculate TF, IDF, TF-IDF score
-- Compute Cosine Similarity
-- Rank documents based on relevance
-- Modern dark themed user interface
+- 🔍 Real-time search functionality
+- 📚 Wikipedia document retrieval
+- 📊 TF-IDF computation
+- 📈 Cosine similarity ranking
+- 🏆 Top-5 relevant document display
+- 🖥️ Clean Flask web interface
+- 📄 Summary preview of each result
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
-- Python
-- Flask
-- Scikit-learn
-- Wikipedia API
-- HTML & CSS
+- **Python 3.x**
+- **Flask**
+- **Scikit-learn**
+- **NumPy**
+- **Wikipedia API**
+- **HTML (Jinja2 Templates)**
 
 ---
 
 ## 📂 Project Structure
-
 Academic_Search_Engine/
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
-│
 └── templates/
-      └── index.html
+└── index.html
+
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1️⃣ Clone the Repository
 
-git clone https://github.com/Brindha-sivaperuman/Academic_Search_Engine.git
+
+git clone https://github.com/brindha-sivaperuman/Academic_Search_Engine.git
+
+
+### 2️⃣ Navigate to Project Folder
+
+
 cd Academic_Search_Engine
 
-### 2️⃣ Install Dependencies
+
+### 3️⃣ Install Required Packages
+
 
 pip install -r requirements.txt
 
-### 3️⃣ Run Application
+
+### 4️⃣ Run the Application
+
 
 python app.py
 
-Open browser:
+
+### 5️⃣ Open in Browser
+
 
 http://127.0.0.1:5000/
+
 
 ---
 
 ## 🧠 Working Principle
 
-1. User enters a research query.
-2. System fetches top 5 related Wikipedia topics.
-3. TF-IDF vectorization is applied.
-4. Cosine Similarity is calculated between query and documents.
-5. Documents are ranked based on similarity score.
-6. Results are displayed with TF, IDF, TF-IDF, and Cosine values.
+1. User enters a search query.
+2. Wikipedia API retrieves related topics.
+3. Document summaries are collected.
+4. Text data is transformed into TF-IDF vectors.
+5. Cosine similarity is calculated between query and documents.
+6. Documents are ranked in descending order of similarity.
+7. Top 5 relevant results are displayed to the user.
 
 ---
 
-## 📊 Output Includes
+## 📊 Algorithms Used
 
-- Rank of document
-- Term Frequency (TF)
-- Inverse Document Frequency (IDF)
-- TF-IDF Score
-- Cosine Similarity Score
-- Wikipedia URL
-- Summary of document
+### 🔹 TF-IDF (Term Frequency – Inverse Document Frequency)
 
----
+Measures importance of words in documents relative to the entire corpus.
 
-## 👩‍💻 Developed For
+### 🔹 Cosine Similarity
 
-Information Retrieval Assignment
+Computes similarity between query vector and document vectors.
+
+\[
+Cosine Similarity = \frac{A \cdot B}{||A|| \times ||B||}
+\]
 
 ---
 
-## 📎 GitHub Repository
+## 🎯 Output Display
 
-https://github.com/Brindha-sivaperuman/Academic_Search_Engine
+For each ranked document, the system shows:
+
+- Rank position
+- TF value
+- IDF value
+- TF-IDF score
+- Cosine similarity score
+- Document URL
+- Summary preview
+
+---
+
+## 🎓 Academic Relevance
+
+This project demonstrates:
+
+- Information Retrieval concepts
+- Vector Space Model
+- Text preprocessing
+- Ranking algorithms
+- Web integration with Flask
+
+---
+
+## 👩‍💻 Author
+
+**Brindha Sivaperuman**  
+GitHub: https://github.com/brindha-sivaperuman
+
+---
+
+## 📜 License
+
+This project is developed for academic and educational purposes.
